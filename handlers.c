@@ -12,6 +12,7 @@
 
 #include "ft_printf.h"
 
+//writes a char to stdout
 int	handle_char(int i)
 {
 	unsigned char	c;
@@ -20,6 +21,7 @@ int	handle_char(int i)
 	return (write(1, &c, 1));
 }
 
+//writes string to stdout
 int	handle_string(char *str)
 {
 	if (!str)
@@ -27,6 +29,7 @@ int	handle_string(char *str)
 	return (write(1, str, ft_strlen(str)));
 }
 
+//writes decimal to stdout
 int	handle_decimal(int i)
 {
 	int		length;
@@ -46,6 +49,7 @@ int	handle_decimal(int i)
 	return (length);
 }
 
+//writes unsigned integer to stdout by convering integer to ascii value
 int	ft_uitoa(unsigned int n)
 {
 	int		length;
@@ -60,6 +64,7 @@ int	ft_uitoa(unsigned int n)
 	return (length);
 }
 
+//main function used for testing
 /* int main() {
 ft_hexa(1234567);
   return 0;

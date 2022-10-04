@@ -12,6 +12,7 @@
 
 #include "ft_printf.h"
 
+//convert integer to hexadecimal and writes to stdout
 int	ft_hexa(unsigned int n)
 {
 	unsigned int	temp;
@@ -31,6 +32,7 @@ int	ft_hexa(unsigned int n)
 	return (count);
 }
 
+//convert unsigned integer to hexadecimal and writes to stdout 
 int	ft_hexau(unsigned int n)
 {
 	unsigned int	temp;
@@ -50,6 +52,7 @@ int	ft_hexau(unsigned int n)
 	return (count);
 }
 
+//convert unsigned long to hexadecimal and writes to stdout 
 int	ft_hexaul(unsigned long n)
 {
 	int	count;
@@ -63,6 +66,7 @@ int	ft_hexaul(unsigned long n)
 	return (count);
 }
 
+//convert long to hexadecimal and writes to stdout 
 int	longhexa(unsigned long n)
 {
 	int	count;
