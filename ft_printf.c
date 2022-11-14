@@ -12,6 +12,8 @@
 
 #include "ft_printf.h"
 
+//This function detects what kind of conversion it needs to do and sends it to
+//the right subfunction. The subfunction write to stdout, and return the amount of bytes it wrote in stdout
 int	handler(const char *s, int i, va_list args)
 {
 	int	length;
@@ -38,6 +40,11 @@ int	handler(const char *s, int i, va_list args)
 	return (length);
 }
 
+//This functions is the starting function. It does mostly the same as the original printf
+//but use write statement. 
+//It takes a string and a variable amount of command line argument. Everytime there is a "%"
+//in the string, it will go into subfunction that handles conversions and write to stdout, just like
+//in printf (see man)
 int	ft_printf(const char *s, ...)
 {
 	va_list	args;
