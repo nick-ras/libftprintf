@@ -14,6 +14,8 @@ Clone the repository and compile the library:
 ```bash
 git clone XX
 cd libftprintf
+git submodule init
+git submodule update
 make
 ```
 Usage
